@@ -19,10 +19,25 @@ export const SimpleForm = () => {
         });
     }
 
-    // Se llama cada vez que se renderiza el componente
+    // // Se llama cada vez que se renderiza el componente
+    // useEffect(() => {
+    //     console.log('useEffect called');
+    // });
+
+    // Si le añadimos el array vacio ,[] solo se ejecutara una vez
     useEffect(() => {
         console.log('useEffect called');
-    });
+    },[]); 
+
+    // Una de las recomendaciones de React es que se debe de tener un efecto para cada cosa que se quiera hacer
+    useEffect(() => {
+        console.log('formState changed');
+    },[formState]);
+
+    // Una de las recomendaciones de React es que se debe de tener un efecto para cada cosa que se quiera hacer
+    useEffect(() => {
+        console.log('email changed');
+    },[email]);
 
   return (
     <>
