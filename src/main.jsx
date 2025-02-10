@@ -4,8 +4,9 @@ import { HooksApp } from './HooksApp.jsx';
 import './index.css';
 // import { CounterApp } from './01-useState/CounterApp.jsx';
 // import { CounterWhitCustomHook } from './01-useState/CounterWhitCustomHook.jsx';
-import { SimpleForm } from './02-useEffect/SimpleForm.jsx';
-import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook.jsx';
+// import { SimpleForm } from './02-useEffect/SimpleForm.jsx';
+// import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook.jsx';
+import { MultipleCustomHook } from './03-examples/MultipleCustomHook.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
@@ -14,7 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       {/* <CounterApp /> */}
       {/* { <CounterWhitCustomHook /> } */}
       {/* <SimpleForm /> */}
-      <FormWithCustomHook />
+      {/* <FormWithCustomHook /> */}
+      <MultipleCustomHook />
     {/* </React.StrictMode>, */}
   </>,
 )
